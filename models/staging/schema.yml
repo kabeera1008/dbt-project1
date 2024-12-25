@@ -1,0 +1,201 @@
+version: 2
+
+sources:
+  - name: staging
+    database: supple-comfort-444210-e6
+    schema: trip_data_all1
+      # loaded_at_field: record_loaded_at
+    tables:
+      - name: green_tripdata
+      - name: yellow_tripdata
+
+models:
+  - name: stg_staging__green_tripdata
+    description: ""
+    columns:
+      - name: tripid
+        data_type: string
+        description: ""
+
+      - name: vendor_id
+        data_type: string
+        description: ""
+
+      - name: rate_code
+        data_type: string
+        description: ""
+
+      - name: pickup_location_id
+        data_type: string
+        description: ""
+
+      - name: dropoff_location_id
+        data_type: string
+        description: ""
+
+      - name: pickup_datetime
+        data_type: timestamp
+        description: ""
+
+      - name: dropoff_datetime
+        data_type: timestamp
+        description: ""
+
+      - name: store_and_fwd_flag
+        data_type: string
+        description: ""
+
+      - name: passenger_count
+        data_type: int64
+        description: ""
+
+      - name: trip_distance
+        data_type: numeric
+        description: ""
+
+      - name: fare_amount
+        data_type: numeric
+        description: ""
+
+      - name: extra
+        data_type: numeric
+        description: ""
+
+      - name: mta_tax
+        data_type: numeric
+        description: ""
+
+      - name: tip_amount
+        data_type: numeric
+        description: ""
+
+      - name: tolls_amount
+        data_type: numeric
+        description: ""
+
+      - name: ehail_fee
+        data_type: numeric
+        description: ""
+
+      - name: imp_surcharge
+        data_type: numeric
+        description: ""
+
+      - name: total_amount
+        data_type: numeric
+        description: ""
+
+      - name: payment_type
+        data_type: string
+        description: ""
+
+      - name: payment_type_description
+        data_type: string
+        description: ""
+
+      - name: airport_fee
+        data_type: numeric
+        description: ""
+
+      - name: distance_between_service
+        data_type: numeric
+        description: ""
+
+      - name: time_between_service
+        data_type: int64
+        description: ""
+
+      - name: data_file_year
+        data_type: int64
+        description: ""
+
+      - name: data_file_month
+        data_type: int64
+        description: ""
+
+  - name: staging_yellow_trip_data
+    description: ""
+    columns:
+      - name: tripid
+        data_type: string
+        description: ""
+
+      - name: vendor_id
+        data_type: string
+        description: ""
+
+      - name: pickup_datetime
+        data_type: timestamp
+        description: ""
+
+      - name: dropoff_datetime
+        data_type: timestamp
+        description: ""
+
+      - name: store_and_fwd_flag
+        data_type: string
+        description: ""
+
+      - name: passenger_count
+        data_type: int64
+        description: ""
+
+      - name: trip_distance
+        data_type: numeric
+        description: ""
+
+      - name: rate_code
+        data_type: string
+        description: ""
+
+      - name: fare_amount
+        data_type: numeric
+        description: ""
+
+      - name: extra
+        data_type: numeric
+        description: ""
+
+      - name: mta_tax
+        data_type: numeric
+        description: ""
+
+      - name: tip_amount
+        data_type: numeric
+        description: ""
+
+      - name: tolls_amount
+        data_type: numeric
+        description: ""
+
+      - name: airport_fee
+        data_type: numeric
+        description: ""
+
+      - name: imp_surcharge
+        data_type: numeric
+        description: ""
+
+      - name: total_amount
+        data_type: numeric
+        description: ""
+
+      - name: payment_type
+        data_type: string
+        description: ""
+
+      - name: pickup_location_id
+        data_type: string
+        description: ""
+
+      - name: dropoff_location_id
+        data_type: string
+        description: ""
+
+      - name: data_file_year
+        data_type: int64
+        description: ""
+
+      - name: data_file_month
+        data_type: int64
+        description: ""
